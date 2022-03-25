@@ -72,9 +72,10 @@ $(window).resize(function(){
     }
 });
 
+
 $(window).on('scroll',function(){
 
-    gaia.checkScrollForTransparentNavbar();
+  /* gaia.checkScrollForTransparentNavbar();*/
 
 
     if(window_width > 992){
@@ -85,7 +86,7 @@ $(window).on('scroll',function(){
         gaia.checkScrollForContentTransitions();
     }
 
-});
+})
 
 $('a[data-scroll="true"]').click(function(e){
     var scroll_target = $(this).data('id');
@@ -100,6 +101,7 @@ $('a[data-scroll="true"]').click(function(e){
     }
 
 });
+
 
 gaia = {
     misc:{
