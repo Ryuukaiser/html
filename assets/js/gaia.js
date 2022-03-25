@@ -1,16 +1,4 @@
-// =========================================================
-// * Gaia Bootstrap Template - v1.0.1
-// =========================================================
-//
-// * Product Page: https://www.creative-tim.com/product/gaia-bootstrap-template
-// * Licensed under MIT (https://github.com/creativetimofficial/gaia-bootstrap-template/blob/master/LICENSE.md)
-// * Copyright 2019 Creative Tim (http://www.creative-tim.com)
-//
-// * Coded by Creative Tim
-//
-// =========================================================
-//
-// * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
 
 var transparent = true;
 
@@ -84,9 +72,10 @@ $(window).resize(function(){
     }
 });
 
+
 $(window).on('scroll',function(){
 
-    gaia.checkScrollForTransparentNavbar();
+  /* gaia.checkScrollForTransparentNavbar();*/
 
 
     if(window_width > 992){
@@ -97,7 +86,7 @@ $(window).on('scroll',function(){
         gaia.checkScrollForContentTransitions();
     }
 
-});
+})
 
 $('a[data-scroll="true"]').click(function(e){
     var scroll_target = $(this).data('id');
@@ -112,6 +101,7 @@ $('a[data-scroll="true"]').click(function(e){
     }
 
 });
+
 
 gaia = {
     misc:{
