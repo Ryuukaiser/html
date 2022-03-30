@@ -184,8 +184,8 @@ small,
 }
 
 a {
-  color: #777777;
-  opacity: .7;
+  color: black;
+
   font-size: 14px;
 }
 a:hover {
@@ -867,7 +867,7 @@ a,
 
 .form-control {
   background-color: #FFFFFF;
-  border: 1px solid #E3E3E3;
+  border: 1px solid black;
   border-radius: 4px;
   color: #444444;
   padding: 10px 10px;
@@ -1442,7 +1442,7 @@ a,
 
 .navbar.navbar-fixed-top {
   transition: all .5s .1s;
-  z-index:1;
+  z-index:2;
 }
 
 @media (min-width: 768px) {
@@ -2513,7 +2513,6 @@ a,
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
-  z-index: 2;
   position: absolute;
   display: block;
 }
@@ -2527,7 +2526,6 @@ a,
 .section-header-freebie .container,
 .section-our-team-freebie .container {
   position: relative;
-  z-index: 100;
   display: block;
   margin-top: 30vh;
   text-align: center;
@@ -2578,12 +2576,17 @@ a,
 }
 .section-get-started .container {
   margin: 15vh auto;
+  z-index: 3;
 }
 
 .section-contact-4 .parallax,
 .section-our-services .parallax {
   height: 450px;
 }
+.carousel-indicators{
+  z-index:1;
+}
+
 
 .section-our-projects-fluid .row [class^="col-"] {
   padding-left: 0;
@@ -2648,7 +2651,26 @@ a,
   margin-top: 100px;
   margin-bottom: 0px;
   padding: 0px;
+
 }
+@media (min-width:1200px){
+  .section-item .container{
+    width:1000px;
+  }
+}
+
+@media (min-width:992px){
+  .section-item .container{
+    width:800px;
+  }
+}
+
+@media (min-width:768px){
+  .section-item .container{
+    width:700px;
+  }
+}
+
 .card p {
   min-height: 0;
 }
@@ -3876,6 +3898,9 @@ body {
   -ms-flex-direction: column; 
   flex-direction: column;
 }
+.image-cover{
+  width:140px;
+}
 .item-image{
   width: 100%;
   height: auto;
@@ -3985,21 +4010,7 @@ flex-grow: 1;
  
   
   }
-  .item-decription
-  {
-   display: -webkit-box;
-  display: -webkit-flex;  
-  display: -ms-flexbox;   
-  -webkit-box-orient: vertical;   
-  -webkit-box-direction: normal;  
-  -webkit-flex-direction: column; 
-  -ms-flex-direction: column; 
-  flex-direction: column;
-  margin-top: 20px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+
   .item-decription p{
     font-size: 20px;
     font-family: var(--text-font-family);
@@ -4269,4 +4280,26 @@ a.btn_red  {
   margin-bottom:  10px;
    clear:  both;
    overflow:  hidden;
+}
+
+.comic-info{
+  display:block
+}
+
+.chapter-body{
+  width: 100%;
+    text-align: center;
+    margin: 5px 0 50px;
+}
+.chapter-body img{
+  max-width: 100%;
+  display: block;
+  margin: 10px auto;
+  min-width: 80%;
+}
+.section-chapter{
+  background-color: black;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  
 }
